@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo"><span class="highlighted">Rizky</span></a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#services" class="nav-item">Services</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </div>
+
+        <div class="toggler"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero container" id="home">
+      <div class="hero-info">
+        <h1 class="title">Hello! <span class="highlighted">I'm Rizky</span></h1>
+        <p class="hero-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quidem est veritatis laudantium culpa reiciendis animi repudiandae in fugiat earum distinctio ab, fugit excepturi corrupti facere voluptatibus tempora odit provident.
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </p>
+        <a href="#services" class="btn hero-btn">Services</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="assets/img/photo.jpg" alt="Web Developer" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about container" id="about">
+      <div class="about-img">
+        <img src="assets/img/photo.jpg" alt="Hello" />
+      </div>
+
+      <div class="about-info">
+        <h2 class="secondary-title">About Me</h2>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet vero delectus, sed, sequi, ab corporis at nulla voluptatem repudiandae deleniti iure quidem totam distinctio. Eligendi dolorem quo ipsa incidunt.
+        </p>
+
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque earum quo laudantium recusandae culpa, fugit mollitia dolorum quas qui vero repellat praesentium delectus consectetur ratione, repellendus, tempora natus. Dolores,
+          incidunt?
+        </p>
+
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis veniam consequatur magnam accusamus quae necessitatibus, perspiciatis dolore quidem nisi obcaecati reiciendis delectus sint voluptas sed odio iure error dolorum?
+          Placeat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <div class="service container" id="services">
+      <div class="services-header">
+        <h2 class="secondary-title">Services</h2>
+      </div>
+
+      <div class="grid services-grid">
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-computer"></i>
+          <h3>Web Design</h3>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dignissimos?</p>
+        </div>
+
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-meteor"></i>
+          <h3>SEO & Marketing</h3>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dignissimos?</p>
+        </div>
+
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>UI/UX Design</h3>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dignissimos?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects container" id="projects">
+      <div class="projects-header">
+        <h2 class="secondary-title">Projects</h2>
+
+        <div class="projects-tab">
+          <button class="projects-tab-btn projects-tab-btn-active" id="all">All</button>
+          <button class="projects-tab-btn" id="design">Design</button>
+          <button class="projects-tab-btn" id="seo">SEO</button>
+          <button class="projects-tab-btn" id="ui-ux">UI/UX</button>
+        </div>
+      </div>
+
+      <div class="grid projects-grid">
+        <div class="grid-item projects-item all design">
+          <img src="assets/img/projects-1.jpg" alt="" />
+        </div>
+        <div class="grid-item projects-item all design">
+          <img src="assets/img/projects-2.jpg" alt="" />
+        </div>
+        <div class="grid-item projects-item all seo">
+          <img src="assets/img/projects-3.jpg" alt="" />
+        </div>
+        <div class="grid-item projects-item all seo">
+          <img src="assets/img/projects-4.jpg" alt="" />
+        </div>
+        <div class="grid-item projects-item all ui-ux">
+          <img src="assets/img/projects-5.jpg" alt="" />
+        </div>
+        <div class="grid-item projects-item all ui-ux">
+          <img src="assets/img/projects-6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container contact" id="contact">
+      <div class="contact-info">
+        <h2 class="secondary-title">Contact</h2>
+        <div class="info-container">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Address</h3>
+              <p>Bogor, Jawa Barat</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Email</h3>
+              <p>rizky@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Phone</h3>
+              <p>55-5555-5555</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <button class="btn submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 Muhammad Rizky All Right Reserved</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

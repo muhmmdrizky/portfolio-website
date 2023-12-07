@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --first: #171717;
+  --second: #444444;
+  --third: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--third);
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--first);
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility classes */
+.container {
+  padding: 4rem 2rem;
+  color: var(--first);
+}
+
+.highlighted {
+  color: var(--first);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: var(--first);
+  color: var(--third);
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
+  display: inline-block;
+  margin-top: 2rem;
+  border: 2px solid var(--first);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--first);
+}
+
+/* Header Style */
+.nav {
+  background-color: var(--third);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0.5rem 2.5rem;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: Pacifico, sans-serif;
+}
+
+.nav-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  background-color: var(--third);
+  width: 100%;
+  left: -200%;
+  padding: 1rem;
+  transition: left 0.5s ease;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  font-size: 0.9rem;
+}
+
+.nav-active {
+  left: 0;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+  color: var(--first);
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(56, 56, 56);
+  margin-top: 0.5rem;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  color: var(--second);
+}
+
+.nav-item-active::after {
+  background-color: var(--first);
+  opacity: 1;
+}
+
+.toggler .line {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: var(--first);
+  margin: 5px;
+}
+
+.toggler:hover {
+  cursor: pointer;
+}
+
+/* Hero Styles */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  color: var(--first);
+}
+
+.hero-img {
+  padding-top: 2rem;
+}
+
+.hero-img img {
+  border-radius: 50%;
+  width: 350px;
+}
+
+.hero-info {
+  text-align: center;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  width: 70%;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.hero-description {
+  color: var(--second);
+}
+
+/* About Section */
+.about {
+  color: var(--first);
+}
+
+.about-info {
+  padding-top: 2rem;
+}
+
+.about-img img {
+  border-radius: 15px;
+}
+
+.about-info p .description {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--third);
+}
+
+.secondary-title {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.secondary-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 2px;
+  background-color: var(--second);
+}
+
+/* Services Section */
+
+.services-item {
+  background: var(--second);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--third);
+}
+
+.services-item i {
+  font-size: 4rem;
+  color: var(--third);
+  margin-bottom: 2rem;
+}
+
+/* Projects Section */
+.projects-header {
+  padding-bottom: 2rem;
+}
+
+.projects-tab-btn {
+  background-color: transparent;
+  border: 2px solid var(--first);
+  color: var(--first);
+  padding: 0.3rem 1.5rem;
+  border-radius: 5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+
+.projects-tab-btn:hover {
+  cursor: pointer;
+  background-color: var(--first);
+  color: var(--third);
+}
+
+.projects-tab-btn-active {
+  background-color: var(--first);
+  color: var(--third);
+}
+
+.projects-item {
+  margin-bottom: 1rem;
+}
+
+.projects-item img {
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-info-item {
+  display: flex;
+}
+
+.contact-info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--first);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-icon i {
+  color: var(--third);
+}
+
+.contact-info-data h3 {
+  color: var(--first);
+}
+
+.contact-info-data p {
+  color: var(--second);
+}
+
+.contact-form button {
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  background: var(--second);
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.footer {
+  color: var(--second);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 700px) {
+  .container {
+    padding: 4rem 6rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  /* Grid */
+  .grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .grid-item {
+    width: 30%;
+  }
+
+  /* Nav */
+  .nav {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .nav-item::after {
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    background: none;
+  }
+
+  .nav-item-active {
+    opacity: 1;
+  }
+
+  .nav-item-active::after {
+    background: var(--second);
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-info {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  /* About */
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-img {
+    width: 40%;
+  }
+
+  .about-info {
+    width: 55%;
+  }
+
+  /* Contact */
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    width: 55%;
+  }
+
+  .submit-btn {
+    font-size: 1.5rem;
+  }
+}
